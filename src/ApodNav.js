@@ -18,7 +18,7 @@ const ApodNav = (props) => {
     <div>
       <Navbar color="faded" light>
         <NavbarBrand href="https://api.nasa.gov/" className="mr-auto">
-          Nasa API
+          Nasa APIs
         </NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>

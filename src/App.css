@@ -27,3 +27,12 @@
 .apod-image {
   height: 100vh;
 }
+
+.copyright {
+  color: white;
+  padding: 10px;
+  height: 98%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
