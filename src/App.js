@@ -1,6 +1,7 @@
 import Axios from "axios";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import ApodNav from "./ApodNav";
 import ApodImage from "./ApodImage";
 import "./App.css";
 
@@ -19,14 +20,9 @@ function App() {
   return (
     <div className="App">
       {console.log("This is my apod:", apod)}
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun{" "}
-        <span role="img" aria-label="go!">
-          🚀
-        </span>
-        !
-      </p>
+      <ApodNav />
+      <h1>Nasa Photo of the Day</h1>
+
       <ApodImage apodImg={apod.hdurl} />
     </div>
   );
