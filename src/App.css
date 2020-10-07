@@ -24,15 +24,19 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.apod-image {
+  height: 80vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.copyright {
+  color: white;
+  padding: 10px;
+  height: 98%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.date {
+  font-size: 15px;
 }
