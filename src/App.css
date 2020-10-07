@@ -25,7 +25,7 @@
 }
 
 .apod-image {
-  height: 100vh;
+  height: 80vh;
 }
 
 .copyright {
@@ -35,4 +35,8 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+}
+
+.date {
+  font-size: 15px;
 }

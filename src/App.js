@@ -4,7 +4,7 @@ import ApodNav from "./ApodNav";
 import ApodImage from "./ApodImage";
 import ApodDetails from "./ApodDetails";
 import "./App.css";
-import { API_KEY } from "./resource";
+import { API_KEY, getCurrentDate } from "./resource";
 
 function App() {
   const [apod, setApod] = useState({});
@@ -20,10 +20,9 @@ function App() {
   }, []);
   return (
     <div className="App">
-      {console.log("This is my apod:", apod)}
       <ApodNav />
       <h1>Nasa Photo of the Day</h1>
-
+      <p className="date">{getCurrentDate()}</p>
       <ApodImage
         apodImg={apod.hdurl}
         title={apod.title}

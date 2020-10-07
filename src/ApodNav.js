@@ -8,6 +8,8 @@ import {
   NavItem,
   NavLink,
 } from "reactstrap";
+import logo from "./img/nasaLogo.png";
+import "./App.css";
 
 const ApodNav = (props) => {
   const [collapsed, setCollapsed] = useState(true);
@@ -18,8 +20,9 @@ const ApodNav = (props) => {
     <div>
       <Navbar color="faded" light>
         <NavbarBrand href="https://api.nasa.gov/" className="mr-auto">
-          Nasa APIs
+          <img src={logo} />
         </NavbarBrand>
+
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
